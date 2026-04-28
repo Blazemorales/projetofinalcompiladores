@@ -1,0 +1,25 @@
+[project]
+name = "lox"
+version = "0.1.0"
+description = "analisador_lexico_de_lox"
+readme = "README.md"
+authors = [
+    { name = "Joao Morais", email = "cunhajp2006@gmail.com" },
+    { name = "chips", email = "fabiomacedomendes@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "rich>=14.3.3",
+]
+
+[project.scripts]
+lox = "lox.main:main"
+
+[build-system]
+requires = ["uv_build>=0.8.15,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
