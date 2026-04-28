@@ -1,3 +1,22 @@
 //meu primeiro hello world no lox
 print "Hello, lox!";
 var = 5.0;
+
+fun geradorDeSaudacao(saudacao) {
+  fun retorno(nome) {
+    print saudacao + ", " + nome;
+  }
+  return retorno;
+}
+
+var bomDia = geradorDeSaudacao("Bom dia");
+bomDia("João"); // Imprime: Bom dia, João
+
+class Carro {
+  buzinar() {
+    print "Beep!";
+  }
+}
+
+var meuCarro = Carro();
+meuCarro.buzinar();
